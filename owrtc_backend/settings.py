@@ -80,7 +80,6 @@ WSGI_APPLICATION = 'owrtc_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# Production Sql Lite Database - for production purpose ......................................................................
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -88,8 +87,6 @@ DATABASES = {
     }
 }
 
-
-# Local phpmyadmin Database - for local purpose ...............................................................................
 # DATABASES = {
 # 'default': {
 #         'ENGINE': 'django.db.backends.mysql',
