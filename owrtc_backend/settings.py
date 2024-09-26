@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-uowspr6#3h(@4$sp(=8+#0we%=z_w)ku!d$5253*^z^(av%428'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'SalilNrk.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,6 +78,7 @@ WSGI_APPLICATION = 'owrtc_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# Production Sql Lite Database - for production purpose ......................................................................
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -85,6 +86,8 @@ DATABASES = {
     }
 }
 
+
+# Local phpmyadmin Database - for local purpose ...............................................................................
 # DATABASES = {
 # 'default': {
 #         'ENGINE': 'django.db.backends.mysql',
@@ -132,7 +135,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
